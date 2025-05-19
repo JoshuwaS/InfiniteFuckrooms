@@ -114,7 +114,7 @@ body {
 
 /* Message Styling */
 .message {
-    margin-bottom: 15px;
+    margin: 15px auto; /* Changed from margin-bottom: 15px to add auto centering */
     max-width: 90%;
     animation: fadeIn 0.3s ease-in;
 }
