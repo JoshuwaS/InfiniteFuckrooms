@@ -219,15 +219,40 @@ body {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        height: 100vh;
     }
     
     .artwork {
-        width: 100%;
-        height: 150px;
-        position: static;
+        display: none; /* Hide artwork on mobile to save space */
     }
     
     .chat-container {
-        height: calc(100vh - 300px);
+        width: 100%;
+        height: 100vh;
+        border: none;
+    }
+    
+    .chat-header {
+        height: 150px; /* Bigger header on mobile */
+        padding: 10px;
+    }
+    
+    .header-bubble {
+        font-size: 1.5rem; /* Larger text on mobile */
+        padding: 10px 20px;
+    }
+    
+    .chat-box {
+        padding: 15px;
+        /* Chat takes up remaining space automatically */
+    }
+    
+    .message {
+        max-width: 95%; /* Wider messages on mobile */
+    }
+    
+    .message-content {
+        font-size: 0.9rem; /* Slightly smaller text for readability */
+        line-height: 1.4;
     }
 }
