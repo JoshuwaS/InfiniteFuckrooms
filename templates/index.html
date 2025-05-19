@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Fuckrooms</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="artwork left-art">
+            <!-- Left side artwork -->
+            <div class="art-placeholder">
+                <img src="{{ url_for('static', filename='images/left-artwork.jpg') }}" alt="Left Artwork" id="left-artwork">
+            </div>
+        </div>
+        
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>Infinite Fuckrooms</h1>
+                <div class="status-indicator" id="status-indicator">Connecting...</div>
+            </div>
+            
+            <div class="chat-box" id="chat-box">
+                <!-- Chat messages will be appended here by JavaScript -->
+            </div>
+        </div>
+        
+        <div class="artwork right-art">
+            <!-- Right side artwork -->
+            <div class="art-placeholder">
+                <img src="{{ url_for('static', filename='images/right-artwork.jpg') }}" alt="Right Artwork" id="right-artwork">
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
