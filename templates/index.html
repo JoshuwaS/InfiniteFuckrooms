@@ -18,7 +18,12 @@
         
         <div class="chat-container">
             <div class="chat-header">
-                <h1>Infinite Fuckrooms</h1>
+                <div class="header-image">
+                    <img src="{{ url_for('static', filename='images/header-banner.jpg') }}" alt="Header Banner" id="header-banner">
+                    <div class="header-text-overlay">
+                        <span class="header-bubble">Infinite Fuckrooms</span>
+                    </div>
+                </div>
                 <div class="status-indicator" id="status-indicator">Connecting...</div>
             </div>
             
